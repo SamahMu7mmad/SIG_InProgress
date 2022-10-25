@@ -1,0 +1,72 @@
+package model;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class TestInvoice {
+
+    public static void main(String[] args) {
+        String itemName;
+        double itemPrice;
+        int count;
+        int invoiceNum;
+        Date currentDate = new Date();
+         String customerFN;
+         String customerLN;
+        Scanner userInput = new Scanner(System.in);
+
+        //create invoice test objects
+        InvoiceLines invoice1 = new InvoiceLines();
+        InvoiceLines invoice2 = new InvoiceLines();
+        InvoiceHeader invoice01 = new InvoiceHeader();
+        InvoiceHeader invoice02 = new InvoiceHeader();
+
+        // get input from user for Invoice1
+        System.out.println("Enter customer's first name");
+        customerFN = userInput.next();
+        System.out.println("Enter customer's last name");
+        customerLN = userInput.next();
+        System.out.println("Enter item name");
+        itemName = userInput.next();
+        System.out.println("Enter item price");
+        itemPrice = userInput.nextDouble();
+        System.out.println("Enter ordered quantity");
+        count = userInput.nextInt();
+
+        System.out.println();
+
+        // using the setters to add values to Invoice1
+        invoice1.setItemName(itemName);
+        invoice1.setItemPrice(itemPrice);
+        invoice1.setCount(count);
+
+        // get Invoice2 input
+        System.out.println("Enter item name");
+        itemName = userInput.next();
+        System.out.println("Enter item price");
+        itemPrice = userInput.nextDouble();
+        System.out.println("Enter ordered quantity");
+        count = userInput.nextInt();
+
+        //using setters to add values
+        invoice2.setItemName(itemName);
+        invoice2.setItemPrice(itemPrice);
+        invoice2.setCount(count);
+
+        //Display Invoice1 using getters
+        System.out.println("Date"+ currentDate);
+        System.out.println("Name: "+customerFN+ " "+ customerLN);
+        System.out.println("Item Name: "+ invoice1.getItemName());
+        System.out.println("Item Price: "+"$"+ invoice1.getItemPrice());
+        System.out.println("Item Quantity: "+ invoice1.getCount());
+        System.out.println("Total Amount: "+"$"+ invoice1.getInvTotal());
+
+//Display Invoice2 using getters
+        System.out.println("Item Name: "+ invoice2.getItemName());
+        System.out.println("Item Price: "+"$"+ invoice2.getItemPrice());
+        System.out.println("Item Quantity: "+ invoice2.getCount());
+        System.out.println("Total Amount: "+"$"+ invoice2.getInvTotal());
+
+    }
+    }
