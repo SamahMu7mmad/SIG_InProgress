@@ -1,0 +1,32 @@
+Invoice Generator App
+Packages
+- Model
+- View
+- Controller
+
+Model Classes:
+- InvoiceLines  (Item Name, Item Count, Item Price)
+
+- InvoiceHeader (Invoice No., Customer Name, Date, Total)
+
+Note: classes were created with variables as per instructions provided, still need to work on the coding with the GUI to make it fully functional. 
+I’m working on the Invoice No. issue to make it auto generate.
+
+View frames:
+- Main Frame
+Menu bar was added with Load and Save options “still need to work on the upload and save to the csv file, I found a reusable code but couldn’t add it, I need to study it 1st then 
+implement it my way”.
+
+User can click on New Invoice and the window to add the customer will be displayed.
+Once user add customer then click on Ok, the add new item window will be displayed.
+
+
+- New Invoice Frame (New customer)
+User can add customer then click Ok to open items window and add item.
+
+- New Item Window Frame:
+User can add item name, price & count, and the total amount for the item will be displayed within same window. “need to configure the connection to Jtable then Controller”.
+
+
+Notes: Please note that I didn’t have a previous experience in java and that I’m not a developer, but I’m a manual tester hoping to upgrade to automation, 
+I’m committed to the scholarship and I hope to have the chance to continue working on this project and the automation project as well.
