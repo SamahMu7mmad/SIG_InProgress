@@ -10,7 +10,7 @@ Model Classes:
 - InvoiceHeader (Invoice No., Customer Name, Date, Total)
 
 Note: classes were created with variables as per instructions provided, still need to work on the coding with the GUI to make it fully functional. 
-I’m working on the Invoice No. issue to make it auto generate.
+I’m working on the Invoice No. issue to make it auto generate. Please run main from SIGFrame
 
 View frames:
 - Main Frame
