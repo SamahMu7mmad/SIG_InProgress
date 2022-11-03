@@ -1,0 +1,3 @@
+Please note that I made changes to the main project based on the instructors notes and coded app, one of which is that I replaced the JFrame created 
+for headers and lines with dialoges, also added the code for the csv upload and save options, learned about the dispose methode
+learned about the fireTableDataChanged methode.
